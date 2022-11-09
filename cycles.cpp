@@ -127,7 +127,7 @@ int main () {
             	state = false;
             break;
             default:
-                cout << "Error: Debe de ingresar alguna opción valida";
+                cout << "Error: Debe de ingresar alguna opciÃ³n valida";
             break;
     	}
     }
