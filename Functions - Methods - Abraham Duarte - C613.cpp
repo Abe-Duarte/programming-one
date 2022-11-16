@@ -41,7 +41,7 @@ int main() {
 				goodbye();
 			break;
 			default:
-				cout << "\nError, opci髇 no valida";
+				cout << "\nError, opci贸n no valida";
 			break;
 	}
 	}
@@ -52,7 +52,7 @@ void menu() {
 	cout << "\n[1] Registrar Productos";
 	cout << "\n[2] Modificar Producto";
 	cout << "\n[3] Listado De Productos";
-	cout << "\n[4] Estad韘ticas";
+	cout << "\n[4] Estad铆sticas";
 	cout << "\n[5] Salir";
 	cout << endl;
 }
@@ -94,7 +94,7 @@ void add_products() {
 			price = prices[i][j];
 			cout << "\nCantidad: ";
 			cin >> quantity[i][j];
-			cout << "\nTipo de producto:\nComestible = 1\nBebida = 2\nLimpieza = 3\nElectr髇ica = 4" << endl;
+			cout << "\nTipo de producto:\nComestible = 1\nBebida = 2\nLimpieza = 3\nElectr贸nica = 4" << endl;
 			cin >> category;
 			switch (category) {
 				case 1:
@@ -137,7 +137,7 @@ void modify_products() {
 		cout << "----------------------------------------------------------------";
 		cout << endl;
 	}
-	cout << "\nEl primer d韌ito indica la fila, el segundo d韌ito indica la columna.\nPor favor, indique el n鷐ero de fila del elemento que desea modificar: ";
+	cout << "\nEl primer d铆gito indica la fila, el segundo d铆gito indica la columna.\nPor favor, indique el n煤mero de fila del elemento que desea modificar: ";
 	cin >> e;
 	cout << "\nIndique el numero de columna al que pertenece dicho elemento: ";
 	cin >> f;
@@ -173,7 +173,7 @@ void list_products() {
 	}
 	
 void summary() {
-	cout << "\n### ESTAD蚐TICAS ###";
+	cout << "\n### ESTAD脥STICAS ###";
 	cout << "\nTotal de productos: " << total_products;
 	for (i = 0; i < rows; i++) {
 		for (j = 0; j < columns; j++) {
@@ -182,14 +182,14 @@ void summary() {
 			}
 		}
 	}
-	cout << "\nTotal de productos con Impuesto IVA: " << IVA_accumulator << " art韈ulos";
+	cout << "\nTotal de productos con Impuesto IVA: " << IVA_accumulator << " art铆culos";
 	cout << "\nTotal de productos por tipo:\n[1] Comestibles: " << food_accumulator;
 	cout << "\n[2] Bebidas: " << drinks_accumulator;
 	cout << "\n[3] Limpieza: " << cleaning_accumulator;
-	cout << "\n[4] Electr髇icos: " << electronics_accumulator;
-	cout << "\nProducto m醩 econ髆ico: " << cheaper_accumulator;
-	cout << "\nProducto m醩 costoso: " << expensive_accumulator;
-	cout << "\nIndique el tipo de producto que quiere ver resumido..\n[1] Comestibles\n[2] Bebidas\n[3] Limpieza\n[4] Electr髇icos\n";
+	cout << "\n[4] Electr贸nicos: " << electronics_accumulator;
+	cout << "\nProducto m谩s econ贸mico: " << cheaper_accumulator;
+	cout << "\nProducto m谩s costoso: " << expensive_accumulator;
+	cout << "\nIndique el tipo de producto que quiere ver resumido..\n[1] Comestibles\n[2] Bebidas\n[3] Limpieza\n[4] Electr贸nicos\n";
 	cin >> type;
 	switch (type) {
 		case 1:
@@ -229,7 +229,7 @@ void summary() {
 			}
 		break;
 		case 4:
-			cout << "\n### ELECTR覰ICOS ###";
+			cout << "\n### ELECTR脫NICOS ###";
 			for (int i = 0; i < rows; i++) {
 				cout << "----------------------------------------------------------------";
 				cout << endl;
